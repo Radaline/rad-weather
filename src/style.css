@@ -1,3 +1,9 @@
 h1 {
-  color: blue;
+  font-style: italic;
+}
+
+.weather-app {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: ;
 }
