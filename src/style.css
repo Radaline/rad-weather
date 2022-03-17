@@ -22,7 +22,6 @@ h5 {
 ul {
   margin: 0;
   padding: 10px;
- 
 }
 li {
   list-style: none;
@@ -39,12 +38,19 @@ small {
   text-align: center;
 }
 img {
-  display: block;
+  display: flex;
+  margin: 18px;
 }
 
 .change {
   text-align: center;
   font-size: 16px;
+  font-weight: normal;
+}
+
+.col-12 {
+  max-width: 30px;
+  align-items: center;
 }
 
 .overview {
