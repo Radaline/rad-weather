@@ -12,6 +12,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Rad Weather</title>
   </head>
   <body>
@@ -19,9 +20,9 @@
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <div class="overview">
-            <h1>Nashville</h1>
-            <h5>Clear</h5>
-            <h2>20<div class="change"> C° | F°
+            <h1 id="city">Nashville</h1>
+            <h5 id="conditions">Clear</h5>
+            <h2 id="temperature">20<div class="units"><button class="metric">C°</button><button class="imperi">F°</button>
           </div></h2>
           <div class="row">
             <div class="col-7">

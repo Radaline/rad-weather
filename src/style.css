@@ -42,10 +42,22 @@ img {
   margin: 18px;
 }
 
-.change {
+button {
+  margin: 5px;
+  border-radius: 5px;
+  background-color: rgb(155, 155, 155);
+  color: rgb(255, 255, 255);
+  width: 35px;
+}
+
+.units {
   text-align: center;
   font-size: 16px;
   font-weight: normal;
+}
+
+.imperial {
+  text-decoration: none;
 }
 
 .col-12 {
