@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="src/style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Rad Weather</title>
   </head>
   <body>
@@ -21,15 +21,14 @@
         <div class="weather-app">
           <div class="overview">
             <h1 id="city">Nashville</h1>
-            <h5 id="conditions">Clear</h5>
-            <h2 id="temperature">20<div class="units"><button class="metric">C°</button><button class="imperi">F°</button>
-          </div></h2>
+            <h5 id="description">Clear</h5>
+            <h2><span id="temperature">...</span>°</h2>
           <div class="row">
             <div class="col-7">
               <ul>
-                <li>Precipitation: 0%</li>
-                <li>Humidity 20%</li>
-                <li>Wind: 1 km/h</li>
+                <li class="wet">Precipitation: 0%</li>
+                <li>Humidity: <span id="humidity">...</span></li>
+                <li>Wind: <span id="windSpeed">...</span> km/h</li>
               </ul>
             </div>
             <div class="col-12">
