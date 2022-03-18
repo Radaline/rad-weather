@@ -60,7 +60,8 @@ button {
   font-weight: normal;
 }
 
-.imperial {
+.imperial,
+.metric {
   text-decoration: none;
 }
 
@@ -84,7 +85,40 @@ button {
   margin: 30px auto 10px auto;
 }
 .weather-app {
-  padding: 20px;
+  padding: 30px 20px 15px 20px;
   border: 1px solid #b9b9bb;
-  border-radius: 5px;
+  border-radius: 20px;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+  min-width: 100px;
+}
+
+.search {
+  display: block;
+  align-items: center;
+  margin: auto;
+  width: 225px;
+  border-radius: 20px;
+  text-align: center;
+  border-style: inset;
+}
+
+.search-icon {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  width: 15px;
+  cursor: pointer;
+}
+.imperial {
+  position: relative;
+  right: 5px;
+}
+
+.metric {
+  position: relative;
+  left: 5px;
 }
