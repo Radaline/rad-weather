@@ -9,9 +9,11 @@ h1 {
 
 h2 {
   font-size: 70px;
-  text-align: center;
+  text-align: right;
   color: #4b4b4b;
   padding-bottom: 0px;
+  position: relative;
+  left: -18px;
 }
 
 h5 {
@@ -43,21 +45,17 @@ img {
 }
 
 button {
-  margin: 5px;
-  border-radius: 5px;
-  background-color: rgb(155, 155, 155);
-  color: rgb(255, 255, 255);
-  width: 35px;
-  display: flex;
-  margin: auto;
-  padding: auto;
-  align-items: center;
+  border-radius: 20px;
+  width: 40px;
 }
 
-.units {
+#buttons {
   text-align: center;
   font-size: 16px;
   font-weight: normal;
+  position: relative;
+  left: -50px;
+  top: 15px;
 }
 
 .imperial,
@@ -81,7 +79,7 @@ button {
 
 .weather-app-wrapper {
   max-width: 325px;
-  max-height: 600px;
+  max-height: 575px;
   margin: 30px auto 10px auto;
 }
 .weather-app {
@@ -96,29 +94,20 @@ button {
   min-width: 100px;
 }
 
-.search {
-  display: block;
-  align-items: center;
-  margin: auto;
-  width: 225px;
-  border-radius: 20px;
-  text-align: center;
-  border-style: inset;
-}
-
 .search-icon {
   position: absolute;
-  top: -10px;
+  top: -8px;
   right: 20px;
   width: 15px;
   cursor: pointer;
 }
-.imperial {
+
+.btn {
+  display: block;
   position: relative;
-  right: 5px;
+  left: -15px;
 }
 
-.metric {
-  position: relative;
-  left: 5px;
+#search-form {
+  margin-bottom: 25px;
 }

@@ -1,5 +1,6 @@
 function displayTemperature(response) {
   console.log(response.data);
+  
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#description");
@@ -16,7 +17,20 @@ function displayTemperature(response) {
   tempLo.innerHTML = Math.round(response.data.main.temp_min);
 }
 
-let apiKey = "f93da01be87ea516f1ea4e13f943ea44";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Nashville&appid=${apiKey}&units=metric`;
+function search(city) {
+  let apiKey = "f93da01be87ea516f1ea4e13f943ea44";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
 
-axios.get(apiUrl).then(displayTemperature);
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
+
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
+
+search("Nashville");
