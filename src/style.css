@@ -9,11 +9,10 @@ h1 {
 
 h2 {
   font-size: 70px;
-  text-align: right;
+  text-align: center;
   color: #4b4b4b;
   padding-bottom: 0px;
   position: relative;
-  left: -18px;
 }
 
 h5 {
@@ -110,4 +109,18 @@ button {
 
 #search-form {
   margin-bottom: 25px;
+}
+
+.units {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+.active:hover {
+  text-decoration: none;
 }
