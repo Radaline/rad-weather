@@ -8,6 +8,7 @@ function displayTemperature(response) {
   let humidityElement = document.querySelector("#humidity");
   let tempHi = document.querySelector("#highs");
   let tempLo = document.querySelector("#lows");
+  let iconElement = document.querySelector("#icon");
 
   celsiusTemperature = response.data.main.temp;
 
@@ -18,6 +19,10 @@ function displayTemperature(response) {
   windElement.innerHTML = Math.round(response.data.wind.speed);
   tempHi.innerHTML = Math.round(response.data.main.temp_max);
   tempLo.innerHTML = Math.round(response.data.main.temp_min);
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function search(city) {

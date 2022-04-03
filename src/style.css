@@ -39,8 +39,9 @@ small {
   text-align: center;
 }
 img {
-  display: flex;
+  position: relative;
   margin: 18px;
+  right: 30px;
 }
 
 button {
@@ -57,6 +58,11 @@ button {
   top: 15px;
 }
 
+.btn-primary {
+  background-color: #dba3d2;
+  border-color: #dba3d2;
+}
+
 .imperial,
 .metric {
   text-decoration: none;
@@ -65,10 +71,6 @@ button {
 .col-12 {
   max-width: 30px;
   align-items: center;
-}
-
-.overview {
-  margin-bottom: 20px;
 }
 
 .source {
@@ -117,10 +119,9 @@ button {
   text-align: center;
 }
 
-.active {
+.active,
+.inactive {
   color: rgb(33, 33, 33);
   cursor: default;
-}
-.active:hover {
   text-decoration: none;
 }
