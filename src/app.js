@@ -25,6 +25,26 @@ function displayTemperature(response) {
   );
 }
 
+let days = ["SUN", "MON", "TUES", "WED", "THU", "FRI", "SAT"];
+
+let now = new Date();
+let day = days[now.getDay()];
+let hour = now.getHours();
+if (hour < 10) {
+  hour = `0${hour}`;
+}
+let minutes = now.getMinutes();
+if (minutes < 10) {
+  minutes = `0${minutes}`;
+}
+let currentDate = document.querySelector("h6");
+currentDate.innerHTML = `${day}`;
+
+function formatDate(day) {
+  return new Date();
+}
+console.log(formatDate(new Date()));
+
 function search(city) {
   let apiKey = "f93da01be87ea516f1ea4e13f943ea44";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
