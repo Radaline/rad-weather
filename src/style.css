@@ -59,6 +59,19 @@ button {
   top: 15px;
 }
 
+.forecastHi {
+  color: #3f3532;
+  margin: 5px;
+}
+
+.forecastLow {
+  color: rgb(63, 77, 77);
+  margin: 5px;
+}
+
+.forecastIcons {
+  height: 32px;
+}
 .btn-primary {
   background-color: #dba3d2;
   border-color: #dba3d2;
@@ -71,6 +84,7 @@ button {
   position: relative;
   margin: auto;
   color: #4b4b4b;
+  padding-bottom: 30px;
 }
 
 h6 {
@@ -79,20 +93,9 @@ h6 {
   color: #4b4b4b;
 }
 
-.forecast-wrapper {
-  margin: 20px;
-  text-align: center;
-}
-
 .imperial,
 .metric {
   text-decoration: none;
-}
-
-.col,
-.forecastIcon {
-  display: block;
-  margin: auto;
 }
 
 .col-12 {
@@ -155,6 +158,23 @@ h6 {
 
 .weather-forecast-temperature-max,
 .weather-forecast-temperature-min {
-  font-size: 12px;
-  color: #4b4b4b;
+  font-size: 14px;
+}
+
+.weather-forecast-temperature-max {
+  color: #4b4f5e;
+}
+
+.weather-forecast-temperature-min {
+  color: #6e7488;
+}
+
+.forecastDay {
+  display: block;
+  padding: 0px;
+  align-items: center;
+}
+
+.containerForecast {
+  text-align: center;
 }
